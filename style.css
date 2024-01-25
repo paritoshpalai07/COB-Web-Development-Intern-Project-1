@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------  BACKGROUND  -------------------------------------- */
+main{
+    background-color: #BFBFBF;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------------    WHOLE TO DO BOX --------------------------------- */
+.to-do-box{
+    width: 40%;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/* -----------------------------   TO DO LOGO ----------------------------------------- */
+.logo{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: #564256;
+    position: relative;
+}
+
+.logo div{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    background-image: url("images/to-do-list-icon2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* ------------------------------  INPUT FIELD     ------------------------------------- */
+.input-box{
+    height: 50px;
+    background-color: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 0px 10px 10px;
+}
+
+.input-box input{
+    flex: 1;
+    height: 100%;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+.input-box button{
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #FC814A;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* ---------------------------------   TASK LIST ------------------------------- */
+ul{
+    margin-top: 20px;
+}
+
+ul li{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding-left: 10px;
+}
+
+
+ul li::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    background-image: url("images/unchecked2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:hover{
+    background-color: #e8e8e8a2;
+}
+
+ul li.checked{
+    color: #595959;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url("images/checked.png");   
+}
+
+ul li span{
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+ul li span:hover{
+    color: white;
+    background-color: #969696;
+    border-radius: 50%;
+}
+
+#darkBtn{
+    height: 35px;
+    width: 35px;
+    background: url("images/night-mode2.png");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    outline: none;
+}

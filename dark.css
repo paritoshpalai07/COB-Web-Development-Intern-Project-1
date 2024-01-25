@@ -1,0 +1,35 @@
+main{
+    background-color: black;
+}
+
+.to-do-box{
+    background-color: rgb(30, 30, 30);
+    color: white
+}
+
+.logo{
+    color: white;
+}
+
+.logo div{
+    background-image: url("images/list.png");
+}
+
+ul li:hover{
+    background-color: rgb(39, 39, 39);
+}
+
+ul li.checked{
+    color: white;
+    text-decoration: line-through;
+}
+
+ul li span:hover{
+    color: black;
+    background-color: #969696;
+    border-radius: 50%;
+}
+
+#darkBtn{
+    background-image: url("images/night-mode3.png");
+}
